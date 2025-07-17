@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADR FIT - T Shirt Printing Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ADR FIT</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        </nav>
+        <div class="hero">
+            <h1>Custom T-Shirt Printing</h1>
+            <p>Bring your ideas to life with ADR FIT's high-quality t-shirt printing services.</p>
+            <a href="#contact" class="cta-btn">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="./photo/tshirt.jpg" alt="Custom Design">
+                    <h3>Custom Design</h3>
+                    <p>Create your own unique t-shirt designs with our easy-to-use platform.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./photo/tshirt 2.jpg" alt="Bulk Orders">
+                    <h3>Bulk Orders</h3>
+                    <p>Perfect for teams, events, and businesses. Fast turnaround and great pricing.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./photo/tshirt 3.jpg" alt="Premium Quality"><h3> Premimum Quality</h3>
+                    <p>We use top-notch materials and printing technology for long-lasting results.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About ADR FIT</h2>
+                <p>ADR FIT is a passionate t-shirt printing company dedicated to bringing your creative visions to life. From single custom tees to bulk corporate orders, we pride ourselves on premium quality and customer satisfaction. Let's make your brand stand out!</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <div id="formMessage"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ADR FIT. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

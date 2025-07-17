@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #497d9c 50%, #b1924e 100%);
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8vw 0 8vw;
+
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #ffd700;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 8vw 40px 8vw;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 16px;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+}
+
+.cta-btn {
+    background: #ffd700;
+    color: #222;
+    padding: 12px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.cta-btn:hover {
+    background: #fff;
+    color: #3b82f6;
+}
+
+/* Services */
+.services {
+    padding: 60px 8vw;
+    background: #fff;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #f1f5f9;
+    border-radius: 16px;
+    padding: 28px 18px;
+    width: 310px;
+    box-shadow: 0 2px 16px rgba(60, 64, 67, 0.10);
+    transition: transform 0.2s;
+}
+
+.service-item:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.service-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #3b82f6;
+}
+
+/* About */
+.about {
+    padding: 50px 8vw;
+    background: #e0f2fe;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    color: #06b6d4;
+    margin-bottom: 16px;
+}
+
+/* Contact */
+.contact {
+    padding: 60px 8vw;
+    background: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #3b82f6;
+    margin-bottom: 22px;
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #06b6d4;
+    outline: none;
+}
+
+#contactForm button {
+    background: #3b82f6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#contactForm button:hover {
+    background: #1ac9e8;
+}
+
+#formMessage {
+    margin-top: 12px;
+    color: #16a34a;
+    font-weight: 500;
+    min-height: 22px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 32px 0 12px 0;
+    background: #172741;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .service-list {
+        gap: 18px;
+    }
+
+    .navbar {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .hero {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .services,
+    .about,
+    .contact {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90vw;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        /* background: #a7bcc0; */
+        background: linear-gradient(135deg, #497d9c 50%, #b1924e 100%);
+        color: #fff;
+        flex-direction: column;
+        height: 50vw;
+        text-align: right;
+        padding: 18px 8vw;
+        gap: 16px;
+        z-index: 1001;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #fff;
+    }
+}
